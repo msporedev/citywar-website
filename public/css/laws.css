@@ -4,3 +4,15 @@ body {
     background-color: #f4f4f4;  
     border: ridge 0.5em #45a049;
 }  
+
+article{
+    text-align: right;
+    font-size: large;
+    font-language-override: normal;
+}
+
+ol{
+    display: flex;
+    gap: 2em;
+    text-align: right;
+}
