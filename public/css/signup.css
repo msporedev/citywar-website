@@ -1,0 +1,74 @@
+body{
+    /* font-family: 'Arial', sans-serif;   */
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}
+
+article{
+    margin: 2em;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: #1c1c1c;
+    color: rgb(220, 220, 220);
+    text-align: center;
+}
+
+figcaption{
+    margin: 1.5em;
+}
+
+label{
+    font-size: large;
+}
+
+input{
+    font-size: large;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    color: rgb(41, 40, 40);
+    display: inline-block;
+    gap: 0;
+}
+
+select{
+    font-size: large;
+    border-radius: 7px;
+    padding: 0px 5px;
+    text-align: left;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: #29aa2d;
+    font-size: large;
+    color: rgb(220, 220, 220);
+    border: #27a22b;
+}
+
+button:hover{
+    background-color: #1e8322;
+    transition-duration: 0.6s;
+    border: #1c7a1f;
+}
+
+p{
+    margin: 6px;
+}
+
+.link{
+    text-decoration: none !important;
+    color: rgb(65, 227, 245);
+    font-size: small;
+}
+
+p.laws{
+    font-size: x-large;
+    display: inline-block;
+}
+
+.law-accept{
+    text-align: center;
+    padding: 0;
+}

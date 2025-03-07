@@ -1,0 +1,242 @@
+body {  
+    font-family: 'Arial', sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}  
+
+header {  
+    background: linear-gradient(to right, #1c1c1c, #333);  
+    color: white;  
+    padding: 20px;  
+    text-align: center;  
+    position: fixed;
+    width: 100%; 
+    font-family: none;
+}  
+
+header h1 {  
+    margin: 0; 
+    display: flex;  
+    gap: 7px; /* فاصله بین لینک‌ها */ 
+}  
+
+nav {  
+    margin: 10px 0;  
+    display: flex;  
+    font-family: none;
+    gap: 7px; /* فاصله بین لینک‌ها */
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 15px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */ 
+}  
+
+nav a:hover {  
+    color: #ffa500; /* رنگ پررنگ هنگام هاور */  
+}  
+
+.search-box{
+    text-align: center;
+}
+
+input#search{
+    font-size: large;
+    border-radius: 5px;
+}
+
+.search-box form button{
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #30d773;
+}
+
+main {  
+    padding: 20px;  
+    padding-top: 10em;
+}  
+
+.categories {  
+    text-align: center;  
+    margin-bottom: 30px;  
+}  
+
+.category {  
+    display: inline-block;  
+    background-color: #30d773;  
+    color: white;  
+    padding: 10px 20px;  
+    margin: 5px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+    font-family: 'Arial', sans-serif;
+}  
+
+.category:hover {  
+    background-color: #209b51; /* تغییر رنگ در هاور */  
+    transition-duration: 0.7s;
+    transition: padding 0.3s;
+    zoom: initial 4px;
+    padding: 12px 22px;
+}  
+
+.product-list {  
+    margin-top: 20px;  
+}  
+
+.products {  
+    display: flex;  
+    flex-wrap: wrap; /* اجازه به محصولات برای شکست به خطوط جدید */  
+    justify-content: center; /* مرکز کردن محصولات */  
+}  
+
+.product {  
+    background-color: white;  
+    border-radius: 10px;  
+    width: 200px;  
+    padding: 15px;  
+    margin: 10px;  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
+    transition: transform 0.2s;  
+}  
+
+.product img {  
+    width: 100%;  
+    border-radius: 5px;  
+}  
+
+.product h3 {  
+    text-align: center;  
+    color: #333;  
+}  
+
+.product p {  
+    font-size: 0.9em;  
+    text-align: center;  
+    color: #666;  
+}  
+
+.price {  
+    font-size: 1.2em;  
+    text-align: center;  
+    margin: 10px 0;  
+    color: #4CAF50; /* سبز */  
+}  
+
+.price-strike{
+    font-size: 1em;
+    text-align: left;
+    margin: 10px 5px;
+    color: rgb(255, 59, 59);
+}
+
+.buy-button {  
+    background-color: #4CAF50; /* سبز */  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    padding: 8px;  
+    width: 100%;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+    font-size: large;
+}  
+
+.buy-button:hover {  
+    background-color: #45a049; /* تیره‌تر در هاور */  
+}  
+
+footer {  
+    text-align: center;  
+    margin-top: 20px;  
+    padding: 10px;  
+    background-color: #333;  
+    color: white;  
+}
+
+.cart {  
+    margin-top: 40px;  
+    background-color: #f9f9f9;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);  
+}  
+
+#cart-items {  
+    margin-bottom: 10px;  
+}
+
+.modal {  
+    display: none; /* پنجره به طور پیش‌فرض پنهان است */  
+    position: fixed; /* برای قرارگیری در وسط صفحه */  
+    z-index: 1; /* در بالای دیگر عناصر */  
+    left: 0;  
+    top: 0;  
+    width: 100%; /* عرض کامل صفحه */  
+    height: 100%; /* ارتفاع کامل صفحه */  
+    overflow: auto; /* در صورت نیاز قابلیّت اسکرول */  
+    background-color: rgb(0,0,0); /* پس‌زمینه سیاه */  
+    background-color: rgba(0,0,0,0.4); /* پس‌زمینه با شفافیت */  
+}  
+
+.modal-content {  
+    background-color: #fefefe;  
+    margin: 15% auto; /* وسط صفحه */  
+    padding: 20px;  
+    border: 1px solid #888;  
+    width: 80%; /* عرض پنجره مودال */  
+    border-radius: 5px; /* گوشه‌های گرد */  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
+}  
+
+.close {  
+    color: #aaa; /* رنگ دکمه بستن */  
+    float: right;  
+    font-size: 28px;  
+    font-weight: bold;  
+}  
+
+.close:hover,  
+.close:focus {  
+    color: black;  
+    text-decoration: none;  
+    cursor: pointer;  
+}  
+
+.complete-purchase {  
+    background-color: #4CAF50; /* سبز */  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    padding: 10px;  
+    margin-top: 15px;  
+    cursor: pointer;  
+}  
+
+.complete-purchase:hover {  
+    background-color: #45a049; /* تیره‌تر شدن در هاور */  
+}
+
+h3 {  
+    margin: 10px 0;  
+}  
+
+label {  
+    display: block;  
+    margin: 5px 0;  
+}
+
+#message {  
+    color: green;  
+    margin-top: 10px;  
+}  
+
+input[type="number"] {  
+    margin-top: 10px;  
+    padding: 5px;  
+    width: 100px;  
+}

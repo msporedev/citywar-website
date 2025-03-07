@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>مدیریت کیف پول</title>  
+    <link rel="stylesheet" href="/public/css/wallet.css"> <!-- استایل‌های مشترک -->  
+    <script src="scripts.js" defer></script>  
+</head>  
+<body>  
+    <header>  
+        <span>Wallet</span>  
+        <nav>  
+            <a href="index.html">صفحه اصلی</a> <!-- لینک به صفحه اصلی -->  
+            <a href="./store.html">بازگشت به فروشگاه</a>
+        </nav>  
+    </header>  
+
+    <main>  
+        <section id="wallet-info">
+            <article>  
+            <h2>موجودی کیف پول:  </h2> <span id="wallet-balance">0</span> 
+            </article>
+            <input type="number" id="amount" placeholder="مقدار شارژ" />  
+            <button onclick="chargeWallet()">شارژ کیف پول</button>  
+            <div id="message"></div>  
+        </section>  
+        <section id="transaction-history">  
+            <h2>سابقه تراکنش‌ها</h2>  
+            <ul id="transaction-list"></ul>  
+        </section>  
+    </main>  
+
+    <script src="/public/js/store.js"></script>
+</body>  
+</html>

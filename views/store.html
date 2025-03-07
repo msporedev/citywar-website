@@ -1,0 +1,323 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="/public/css/store.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+    <title>فروشگاه | CityWar</title>  
+</head>  
+<body>  
+    <header>  
+        <h1>CityWar Shop</h1>  
+        <nav>  
+            <a href="index.html">صفحه اصلی</a>  
+            <a href="profile.html">پروفایل</a>  
+            <a href="events.html">جوایز و ایونت‌ها</a>  
+            <a href="wallet.html" id="wallet-link">کیف پول</a>
+            <a href="#" id="cart-icon" onclick="openCart()">🛒 سبد خرید (<span id="cart-count">0</span>)</a> 
+        </nav>  
+    </header> 
+    
+        
+    
+    <main>  
+        <section class="categories">  
+            <h2>دسته‌بندی‌ها</h2>  
+            <!-- <div class="category" onclick="filterProducts('currencys')">
+                <span>💱 ارز ها</span>
+            </div> -->
+            <div class="category" onclick="filterProducts('weapons')">  
+                <span>⚔️ سلاح‌ها</span>  
+            </div>  
+            <div class="category" onclick="filterProducts('armor')">  
+                <span>🛡️ زره‌ها</span>  
+            </div>  
+            <div class="category" onclick="filterProducts('resources')">  
+                <span>🌍 منابع</span>  
+            </div>  
+            <div class="category" onclick="filterProducts('mine')">
+                <span>⛏️ جمع آوری</span>
+            </div>
+            <div class="category" onclick="filterProducts('kits')">
+                <span>🧰 کیت ها</span>
+            </div>
+            <div class="category" onclick="filterProducts('misc')">  
+                <span>🎲 متفرقه</span>  
+            </div>  
+            
+            
+        </section>  
+
+        <div class="search-box">
+
+            <form role="searchbox" method="get">
+                <search>
+                    <label for="search">
+                        <input type="search" name="" id="search"><button type="submit" role="search">🔎</button>
+                    </label>
+                </search>
+            </form>
+    
+        </div>
+
+        <section id="product-list" class="product-list">  
+            <h2>محصولات</h2>  
+            <div class="products" id="products">  
+                <!-- سلاح‌ها -->  
+                <div class="product" data-category="weapons" title="Sharpness I">  
+                    <img src="/public/images/enchanted-diamond-sword.jpg" alt="Enchanted Lv.1 Diamond Sword">  
+                    <h3>Diamond Sword</h3>  
+                    <p>Enchanted Lv.1 Sword</p>  
+                    <span class="price">1,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Diamond Sword', 1000)">خرید</button>  
+                </div>  
+                <div class="product" data-category="weapons" title="Sharpness I">  
+                    <img src="/public/images/enchanted-netherite-sword.jpg" alt="Enchanted Lv.1 Netherite Sword">  
+                    <h3>Netherite Sword</h3>  
+                    <p>Enchanted Lv.1 Sword</p>  
+                    <span class="price">5,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Netherite Sword', 5000)">خرید</button>  
+                </div>  
+                <div class="product" data-category="weapons" title="Sharpness I">  
+                    <img src="/public/images/enchanted-iron-sword.jpg" alt="Enchanted Lv.1 Iron Sword">  
+                    <h3>Iron Sword</h3>  
+                    <p>Enchanted Lv.1 Sword</p>  
+                    <span class="price">200 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Iron Sword', 200)">خرید</button>  
+                </div>  
+                <div class="product" data-category="weapons" title="Sharpness I">  
+                    <img src="/public/images/enchanted-golden-sword.jpg" alt="Enchanted Lv.1 Golden Sword">  
+                    <h3>Golden Sword</h3>  
+                    <p>Enchanted Lv.1 Sword</p>  
+                    <span class="price">250 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Golden Sword', 250)">خرید</button>  
+                </div>  
+                <div class="product" data-category="weapons" title="power I">  
+                    <img src="/public/images/enchanted-bow.jpg" alt="Enchanted Lv.1 Bow">  
+                    <h3>Bow</h3>  
+                    <p>Enchanted Lv.1 Bow</p>  
+                    <span class="price">800 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Bow', 800)">خرید</button>  
+                </div>  
+                <div class="product" data-category="weapons" title="unbreaking I">  
+                    <img src="/public/images/enchanted-shield.jpg" alt="Enchanted Lv.1 Shield">  
+                    <h3>Shield</h3>  
+                    <p>Enchanted Lv.1 Shield</p>  
+                    <span class="price">1,100 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Shield', 1100)">خرید</button>  
+                </div> 
+                <div class="product" data-category="weapons" title="">  
+                    <img src="/public/images/enchanted-trident.jpg" alt="Enchanted Lv.1 Trident">  
+                    <h3>Trident</h3>  
+                    <p>Enchanted Lv.1 Trident</p>  
+                    <span class="price">6,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Trident', 6000)">خرید</button>  
+                </div> 
+                <div class="product" data-category="weapons" title="Sharpness I">  
+                    <img src="/public/images/enchanted-hammer.jpg" alt="Enchanted Lv.1 Hammer">  
+                    <h3>Hammer</h3>  
+                    <p>Enchanted Lv.1 Hammer</p>  
+                    <span class="price">5,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Hammer', 5000)">خرید</button>  
+                </div> 
+
+                <!-- زره‌ها -->  
+                <div class="product" data-category="armor" title="protection |">  
+                    <img src="/public/images/enchanted-diamond-armor.jpg" alt="Enchanted Lv.1 Diamond Armor">  
+                    <h3>Diamond Armor</h3>  
+                    <p>Enchanted Lv.1 Armor</p>  
+                    <span class="price">3,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Diamond Armor', 3000)">خرید</button>  
+                </div>  
+                <div class="product" data-category="armor" title="protection |">  
+                    <img src="/public/images/enchanted-golden-armor.jpg" alt="Enchanted Lv.1 Golden Armor">  
+                    <h3>Golden Armor</h3>  
+                    <p>Enchanted Lv.1 Armor</p>  
+                    <span class="price">1,350 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Golden Armor', 1350)">خرید</button>  
+                </div>  
+                <div class="product" data-category="armor" title="protection |">  
+                    <img src="/public/images/enchanted-netherite-armor.jpg" alt="Enchanted Lv.1 Netherite Armor">  
+                    <h3>Netherite Armor</h3>  
+                    <p>Enchanted Lv.1 Armor</p>  
+                    <span class="price-strike"><strike>8,500 CYT</strike></span><span class="price">8,250 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Netherite Armor', 8250)">خرید</button>  
+                </div>  
+                <div class="product" data-category="armor" title="protection |">  
+                    <img src="/public/images/enchanted-iron-armor.jpg" alt="Enchanted Lv.1 Iron Armor">  
+                    <h3>Iron Armor</h3>  
+                    <p>Enchanted Lv.1 Armor</p>  
+                    <span class="price">1,150 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Iron Armor', 1150)">خرید</button>  
+                </div>  
+
+                <!-- منابع -->  
+                <div class="product" data-category="resources">  
+                    <img src="/public/images/Diamond.jpg" alt="Diamond">  
+                    <h3>Diamond</h3>  
+                    <p>×1 Diamond</p>  
+                    <span class="price">100 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('×1 Diamond', 100)">خرید</button>  
+                </div>  
+                <div class="product" data-category="resources">  
+                    <img src="/public/images/Netherite-Ingot.jpg" alt="Netherite">  
+                    <h3>Netherite</h3>  
+                    <p>×1 Netherite</p>  
+                    <span class="price">1,200 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('×1 Netherite', 1200)">خرید</button>  
+                </div>  
+                <div class="product" data-category="resources">  
+                    <img src="/images/resource3.png" alt="منبع 3">  
+                    <h3>منبع 3</h3>  
+                    <p>توضیحات درباره منبع 3</p>  
+                    <span class="price">90 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('منبع 3', 90)">خرید</button>  
+                </div>  
+                <div class="product" data-category="resources">  
+                    <img src="/images/resource4.png" alt="منبع 4">  
+                    <h3>منبع 4</h3>  
+                    <p>توضیحات درباره منبع 4</p>  
+                    <span class="price">125 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('منبع 4', 125)">خرید</button>  
+                </div>  
+
+
+                <!-- محصولات جمع آوری -->
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-diamond-pickaxe.jpg" alt="Enchanted Lv.1 Diamond Pickaxe">  
+                    <h3>Diamond Pickaxe</h3>  
+                    <p>Enchanted Lv.1 Pickaxe</p>  
+                    <span class="price">2,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Diamond Pickaxe' , 2000)">خرید</button>  
+                </div>  
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-netherite-pickaxe.jpg" alt="Enchanted Lv.1 Netherite Pickaxe">  
+                    <h3>Netherite Pickaxe</h3>  
+                    <p>Enchanted Lv.1 Pickaxe</p>  
+                    <span class="price">6,500 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Netherite Pickaxe' , 6500)">خرید</button>  
+                </div>  
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-iron-pickaxe.jpg" alt="Enchanted Lv.1 Iron Pickaxe">  
+                    <h3>Iron Pickaxe</h3>  
+                    <p>Enchanted Lv.1 Pickaxe</p>  
+                    <span class="price">150 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Iron Pickaxe' , 150)">خرید</button>  
+                </div>
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-golden-pickaxe.jpg" alt="Enchanted Lv.1 Golden Pickaxe">  
+                    <h3>Golden Pickaxe</h3>  
+                    <p>Enchanted Lv.1 Pickaxe</p>  
+                    <span class="price">250 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Golden Pickaxe' , 250)">خرید</button>  
+                </div>
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-diamond-axe.jpg" alt="Enchanted Lv.1 Diamond Axe">  
+                    <h3>Diamond Axe</h3>  
+                    <p>Enchanted Lv.1 Axe</p>  
+                    <span class="price">2,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Diamond Axe' , 2000)">خرید</button>  
+                </div>
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-netherite-axe.jpg" alt="Enchanted Lv.1 Netherite Axe">  
+                    <h3>Netherite Pickaxe</h3>  
+                    <p>Enchanted Lv.1 Axe</p>  
+                    <span class="price">6,500 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Netherite Axe' , 6500)">خرید</button>  
+                </div>
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-iron-axe.jpg" alt="Enchanted Lv.1 Iron Axe">  
+                    <h3>Iron Axe</h3>  
+                    <p>Enchanted Lv.1 Axe</p>  
+                    <span class="price">150 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Iron Axe' , 150)">خرید</button>  
+                </div>
+                <div class="product" data-category="mine" title="Eficiency I">  
+                    <img src="/public/images/enchanted-golden-axe.jpg" alt="Enchanted Lv.1 Golden Axe">  
+                    <h3>Golden Axe</h3>  
+                    <p>Enchanted Lv.1 Axe</p>  
+                    <span class="price">250 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Golden Axe' , 250)">خرید</button>  
+                </div>
+                
+
+                <!-- محصولات متفرقه -->  
+                <div class="product" data-category="misc">  
+                    <img src="/public/images/enchanting-bottle.jpg" alt="Enchanting Bottle">  
+                    <h3>Enchanting Bottle</h3>  
+                    <p>×64 Enchanting Bottle</p>  
+                    <span class="price">100 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('×64 Enchanting Bottle', 100)">خرید</button>  
+                </div>  
+                <div class="product" data-category="misc">  
+                    <img src="/public/images/enchanted-golden-apple.jpg" alt="Enchanted Golden apple">  
+                    <h3>Golden Apple</h3>  
+                    <p>×1 Enchanted Golden Apple</p>  
+                    <span class="price">150 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('×1 Enchanted Golden Apple', 150)">خرید</button>  
+                </div>  
+                <div class="product" data-category="misc">  
+                    <img src="/images/misc3.png" alt="محصول متفرقه 3">  
+                    <h3>محصول متفرقه 3</h3>  
+                    <p>توضیحات درباره محصول متفرقه 3</p>  
+                    <span class="price">65 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('محصول متفرقه 3', 65)">خرید</button>  
+                </div>  
+                <div class="product" data-category="misc">  
+                    <img src="/images/misc4.png" alt="محصول متفرقه 4">  
+                    <h3>محصول متفرقه 4</h3>  
+                    <p>توضیحات درباره محصول متفرقه 4</p>  
+                    <span class="price">55 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('محصول متفرقه 4', 55)">خرید</button>  
+                </div>  
+            </div>  
+        </section>  
+
+                <!-- کیف پول -->  
+                <!-- <div id="wallet-section">  
+                    <h2>مدیریت کیف پول</h2>  
+                    <h3>موجودی کیف پول: <span id="wallet-balance">500 CYT</span></h3>  
+                    <label for="amount">مقدار برای شارژ کیف پول:</label>  
+                    <input type="number" id="amount" min="1" placeholder="مقدار مورد نظر را وارد کنید" />  
+                    <button onclick="chargeWallet()">شارژ کیف پول</button>  
+                    <div id="message"></div>  
+                </div>   -->
+
+        <!-- سبد خرید -->  
+        <div id="cart-modal" class="modal">  
+            <div class="modal-content">  
+                <span class="close" onclick="closeCart()">&times;</span>  
+                <h2>سبد خرید</h2>  
+                <div id="cart-items"></div>  
+                <div id="total-price">جمع کل: <span id="total-amount">0</span> CYT</div>  
+        
+                <!-- روش‌های پرداخت -->  
+                <div>  
+                    <h3>روش پرداخت:</h3>  
+                    <label>  
+                        <input type="radio" name="payment-method" value="direct" checked>  
+                        پرداخت مستقیم  
+                    </label>  
+                    <label>  
+                        <input type="radio" name="payment-method" id="use-wallet" onchange="toggleWalletUsage()" />  
+                        استفاده از کیف پول  
+                    </label>  
+                    <div id="wallet-balance-section" style="display: none;">  
+                        <h3>موجودی کیف پول: <span id="wallet-balance-cart">0</span> CYT</h3>   
+                    </div>  
+                </div>  
+        
+                <button class="complete-purchase" onclick="completePurchase()">تکمیل خرید</button>  
+            </div>    
+        </div>
+    </main> 
+
+    <footer>  
+        <p>© 2025 CityWar. همه حقوق محفوظ است.</p>  
+    </footer>  
+
+    <script src="/public/js/store.js"></script>  
+    <script src="/public/js/shopping-cart.js"></script>
+</body>  
+</html>
