@@ -202,6 +202,11 @@ main #wallet-info{
     color: #45a049;
 }
 
+#wallet-dollar{
+    font-size: x-large;
+    color: #45a049;
+}
+
 main #wallet-info article{
     margin-bottom: 0.5em;
     background-color: #393939;

@@ -91,7 +91,7 @@ function chargeWallet() {
         return;  
     }  
 
-    walletBalance += amount; // افزایش موجودی کیف پول  
+    walletBalance += amount; // افزایش موجودی کیف پول
     transactions.push(`+${amount} CYT`); // ثبت تراکنش  
     updateWalletDisplay();  
     amountInput.value = ""; // پاک کردن فیلد ورودی  
@@ -100,6 +100,7 @@ function chargeWallet() {
 // تابع برای بروزرسانی نمایش کیف پول  
 function updateWalletDisplay() {  
     document.getElementById("wallet-balance").innerText = `${walletBalance} CYT`;  
+    document.getElementById("wallet-dollar").innerText = `${walletBalance / 1000} $`
     document.getElementById("message").innerText = `کیف پول با موفقیت به مبلغ ${walletBalance} CYT شارژ شد.`;  
     updateTransactionHistory();  
 }  
@@ -128,5 +129,5 @@ function toggleWalletUsage() {
     }  
 }  
 
-// بارگذاری اولیه موجودی کیف پول  
-document.getElementById("wallet-balance-cart").innerText = `${walletBalance}`;
+// // بارگذاری اولیه موجودی کیف پول  
+// document.getElementById("wallet-balance-cart").innerText = `${walletBalance}`;
