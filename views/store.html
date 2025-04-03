@@ -54,7 +54,8 @@
             <form role="searchbox" method="get">
                 <search>
                     <label for="search">
-                        <input type="search" name="" id="search"><button type="submit" role="search">🔎</button>
+                        <input type="search" name="" id="search" onkeyup="searchProducts(this)">
+                        <button type="submit" role="search">🔎</button>
                     </label>
                 </search>
             </form>
@@ -111,8 +112,8 @@
                     <img src="/public/images/enchanted-trident.jpg" alt="Enchanted Lv.1 Trident">  
                     <h3>Trident</h3>  
                     <p>Enchanted Lv.1 Trident</p>  
-                    <span class="price">6,000 CYT</span>  
-                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Trident', 6000)">خرید</button>  
+                    <span class="price">15,000 CYT</span>  
+                    <button class="buy-button" onclick="addToCart('Enchanted Lv.1 Trident', 15000)">خرید</button>  
                 </div> 
                 <div class="product" data-category="weapons" title="Sharpness I">  
                     <img src="/public/images/enchanted-hammer.jpg" alt="Enchanted Lv.1 Hammer">  

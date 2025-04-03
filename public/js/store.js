@@ -71,6 +71,13 @@ function filterProducts(category) {
     });  
 }
 
+function searchProducts(event) { 
+    const products = document.querySelectorAll(".product");  
+    products.forEach(product => {  
+        product.style.display = product.getAttribute("data-category").includes(event.value) ? "block" : "none";  
+    });  
+}
+
 let walletBalance = 0; // موجودی کیف پول  
 let transactions = []; // آرایه‌ای برای ذخیره سابقه تراکنش‌ها  
 
