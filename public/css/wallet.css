@@ -19,12 +19,12 @@ header span {
     color: #ebebeb;
     margin: 0; 
     display: flex; 
-    font-family: initial; 
-
+    font-family: 'Arial', sans-serif;
     gap: 15px; /* فاصله بین لینک‌ها */ 
 }  
 
 nav {  
+    font-family: 'Arial', sans-serif;
     margin: 10px 0;  
     display: flex;  
     gap: 15px; /* فاصله بین لینک‌ها */
