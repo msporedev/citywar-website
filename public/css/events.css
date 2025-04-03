@@ -1,0 +1,30 @@
+body{
+    font-family: 'Arial', sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}
+
+header {  
+    background: linear-gradient(to right, #1c1c1c, #333);  
+    color: white;  
+    padding: 20px;  
+    text-align: center;  
+    position: fixed;
+    width: 100%; 
+    font-family: none;
+} 
+
+nav {  
+    margin: 10px 0;  
+    display: flex;  
+    font-family: none;
+    gap: 7px; /* فاصله بین لینک‌ها */
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 15px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */ 
+}
