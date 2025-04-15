@@ -23,9 +23,11 @@ header h1 {
 
 nav {  
     margin: 10px 0;  
-    display: flex;  
+    display: flex;
     font-family:'Arial', sans-serif;
-    gap: 7px; /* فاصله بین لینک‌ها */
+    gap: 0.5px; /* فاصله بین لینک‌ها */
+    text-align: left;
+    flex-wrap: wrap;
 }  
 
 nav a {  
@@ -64,7 +66,7 @@ main {
     margin-bottom: 30px;  
 }  
 
-.category {  
+.category{  
     display: inline-block;  
     background-color: #30d773;  
     color: white;  
@@ -76,7 +78,7 @@ main {
     font-family: 'Arial', sans-serif;
 }  
 
-.category:hover {  
+.category:hover{  
     background-color: #209b51; /* تغییر رنگ در هاور */  
     transition-duration: 0.7s;
     transition: padding 0.3s;

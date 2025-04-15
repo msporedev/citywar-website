@@ -14,27 +14,27 @@
     <header>  
         <span><strong>Wallet</strong></span>  
         <nav>  
-            <a href="index.html">صفحه اصلی</a> <!-- لینک به صفحه اصلی -->  
-            <a href="./store.html">بازگشت به فروشگاه</a>
+            <a href="index.html">Main Menu</a> <!-- لینک به صفحه اصلی -->  
+            <a href="./store.html">Back To Store</a>
         </nav>  
     </header>  
 
     <main>  
         <section id="wallet-info">
             <article>
-            <h2>موجودی به دلار: </h2> <span id="wallet-dollar">0</span>
+            <h2>Balance in dollars: </h2> <span id="wallet-dollar">0</span>
             <hr>
             </article>
             <article>  
-            <h2>موجودی کیف پول:  </h2> <span id="wallet-balance">0</span> 
+            <h2>Wallet Balance:  </h2> <span id="wallet-balance">0</span> 
             <hr>
             </article>
-            <input type="number" id="amount" placeholder="مقدار شارژ" />  
-            <button onclick="chargeWallet()">شارژ کیف پول</button>  
+            <input type="number" id="amount" placeholder="Charge Amount" />  
+            <button onclick="chargeWallet()">Wallet Charge</button>
             <div id="message"></div>  
         </section>  
         <section id="transaction-history">  
-            <h2>سابقه تراکنش‌ها</h2>  
+            <h2>Transaction History</h2>  
             <ul id="transaction-list"></ul>  
         </section>  
     </main>  

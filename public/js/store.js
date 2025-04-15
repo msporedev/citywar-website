@@ -1,5 +1,6 @@
 let cart = [];  
 let totalPrice = 0;  
+var discount = 0;
 
 function addToCart(productName, productPrice) {  
     cart.push({ name: productName, price: productPrice });  
@@ -20,7 +21,15 @@ function updateCartDisplay() {
         cartItems.appendChild(itemElement);  
     });  
 
-    document.getElementById("total-price").innerText = `جمع کل: ${totalPrice} CYT`;  
+    document.getElementById("total-price").innerText = `Total: ${totalPrice} CYT`; 
+    document.getElementById("discount-amount").innerText = `Discount: ${discount} %`;
+    
+    if (discount == 0) {
+        document.getElementById("total-discount").innerText = `Total After Discount: ${totalPrice} CYT`;
+    } else {
+        document.getElementById("total-discount").innerText = `Total After Discount: ${totalPrice *(discount / 100)} CYT`;
+    }
+        
     document.getElementById("wallet-balance").innerText = `${walletBalance} CYT`; // بروزرسانی موجودی کیف پول  
 }  
 
@@ -100,8 +109,8 @@ function chargeWallet() {
 // تابع برای بروزرسانی نمایش کیف پول  
 function updateWalletDisplay() {  
     document.getElementById("wallet-balance").innerText = `${walletBalance} CYT`;  
-    document.getElementById("wallet-dollar").innerText = `${walletBalance / 1000} $`
-    document.getElementById("message").innerText = `کیف پول با موفقیت به مبلغ ${walletBalance} CYT شارژ شد.`;  
+    document.getElementById("wallet-dollar").innerText = `$ ${walletBalance / 1000}`;
+    document.getElementById("message").innerText = `Your wallet has been successfully topped up with ${walletBalance} CYT.`;  
     updateTransactionHistory();  
 }  
 

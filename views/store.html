@@ -14,11 +14,11 @@
     <header>  
         <h1>CityWar Shop</h1>  
         <nav>  
-            <a href="index.html">صفحه اصلی</a>  
-            <a href="profile.html">پروفایل</a>  
-            <a href="events.html">جوایز و ایونت‌ها</a>  
-            <a href="wallet.html" id="wallet-link">کیف پول</a>
-            <a href="#" id="cart-icon" onclick="openCart()">🛒 سبد خرید (<span id="cart-count">0</span>)</a> 
+            <a href="index.html">Main Menu</a>  
+            <a href="profile.html">Profile</a>  
+            <a href="events.html">Events</a>  
+            <a href="wallet.html" id="wallet-link">Wallet</a>
+            <a href="#" id="cart-icon" onclick="openCart()">🛒Shopping Cart (<span id="cart-count">0</span>)</a> 
         </nav>  
     </header> 
     
@@ -26,27 +26,27 @@
     
     <main>  
         <section class="categories">  
-            <h2>دسته‌بندی‌ها</h2>  
+            <h2>Categories</h2>  
             <!-- <div class="category" onclick="filterProducts('currencys')">
                 <span>💱 ارز ها</span>
             </div> -->
             <div class="category" onclick="filterProducts('weapons')">  
-                <span>⚔️ سلاح‌ها</span>  
+                <span>⚔️ weapons</span>  
             </div>  
             <div class="category" onclick="filterProducts('armor')">  
-                <span>🛡️ زره‌ها</span>  
+                <span>🛡️ Armors</span>  
             </div>  
             <div class="category" onclick="filterProducts('resources')">  
-                <span>🌍 منابع</span>  
+                <span>🌍 resources</span>  
             </div>  
             <div class="category" onclick="filterProducts('mine')">
-                <span>⛏️ جمع آوری</span>
+                <span>⛏️ mine</span>
             </div>
             <div class="category" onclick="filterProducts('kits')">
-                <span>🧰 کیت ها</span>
+                <span>🧰 kits</span>
             </div>
             <div class="category" onclick="filterProducts('misc')">  
-                <span>🎲 متفرقه</span>  
+                <span>🎲 other</span>  
             </div>  
             
             
@@ -313,23 +313,26 @@
         <div id="cart-modal" class="modal">  
             <div class="modal-content">  
                 <span class="close" onclick="closeCart()">&times;</span>  
-                <h2>سبد خرید</h2>  
+                <h2>Shopping Cart</h2>  
                 <div id="cart-items"></div>  
-                <div id="total-price">جمع کل: <span id="total-amount">0</span> CYT</div>  
+                <div id="total-price">Total: <span id="total-amount">0</span> CYT</div> 
+
+                <div id="discount-amount">Discount: <span id="discount">0</span>%</div>
+                <div id="total-discount">Total After Discount: <span id="totaldiscount">0</span></div>
         
                 <!-- روش‌های پرداخت -->  
                 <div>  
-                    <h3>روش پرداخت:</h3>  
+                    <h3>Payment method:</h3>  
                     <label>  
                         <input type="radio" name="payment-method" value="direct" checked>  
-                        پرداخت مستقیم  
+                        Bank Card  
                     </label>  
                     <label>  
                         <input type="radio" name="payment-method" id="use-wallet" onchange="toggleWalletUsage()" />  
-                        استفاده از کیف پول  
+                        Use Wallet 
                     </label>  
                     <div id="wallet-balance-section" style="display: none;">  
-                        <h3>موجودی کیف پول: <span id="wallet-balance-cart">0</span> CYT</h3>   
+                        <h3>Wallet Balance: <span id="wallet-balance-cart">0</span> CYT</h3>   
                     </div>  
                 </div>  
         
@@ -339,7 +342,7 @@
     </main> 
 
     <footer>  
-        <p>© 2025 CityWar. همه حقوق محفوظ است.</p>  
+        <p>©2025 CityWar. All rights reserved.</p>  
     </footer>  
 
     <script src="/public/js/store.js"></script>  
