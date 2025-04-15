@@ -1,13 +1,13 @@
 // نمونه داده مقالات  
 const articles = [  
     {  
-      title: "چگونه سئو سایت را بهبود دهیم؟",  
-      excerpt: "در این مقاله نکات مهم برای بهبود سئو سایت شما بررسی شده است...",  
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",  
-      url: "#"  
+      title: "چگونه وارد سرور شویم؟",  
+      excerpt: "در این مقاله تمام مراحل ورود به سرور را آموزش میدهیم...",  
+      image: "https://vscode.dev/github/msporedev/citywar-website/blob/main/public/images/citywar-icon.jpg",  
+      url: ""  
     },  
     {  
-      title: "راهنمای مقدماتی React",  
+      title: "",  
       excerpt: "شروع کار با React و ایجاد رابط کاربری داینامیک و حرفه‌ای...",  
       image: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=400&q=80",  
       url: "#"  
@@ -26,7 +26,9 @@ const articles = [
     },
     {
         title: "",
-        excerpt: ""
+        excerpt: "",
+        image: "",
+        url: "#"
     }
   ];  
   
