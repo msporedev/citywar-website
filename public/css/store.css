@@ -1,5 +1,5 @@
 body {  
-    font-family: 'Arial', sans-serif;  
+    font-family: tahoma, sans-serif;
     margin: 0;  
     padding: 0;  
     background-color: #f4f4f4;  
@@ -28,6 +28,7 @@ nav {
     gap: 0.5px; /* فاصله بین لینک‌ها */
     text-align: left;
     flex-wrap: wrap;
+    transform: scale3d();
 }  
 
 nav a {  
@@ -82,8 +83,9 @@ main {
     background-color: #209b51; /* تغییر رنگ در هاور */  
     transition-duration: 0.7s;
     transition: padding 0.3s;
-    zoom: initial 4px;
-    padding: 12px 22px;
+    /* zoom: initial 4px; */
+    /* padding: 12px 22px; */
+    transform: translateY(-5px);
 }  
 
 .product-list {  
@@ -105,6 +107,10 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
     transition: transform 0.2s;  
 }  
+
+.product:hover {
+    transform: translateY(-4px);
+}
 
 .product img {  
     width: 100%;  
