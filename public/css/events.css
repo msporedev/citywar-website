@@ -12,13 +12,11 @@ header {
     text-align: center;  
     position: fixed;
     width: 100%; 
-    font-family: none;
 } 
 
 nav {  
     margin: 10px 0;  
     display: flex;  
-    font-family: none;
     gap: 7px; /* فاصله بین لینک‌ها */
 }  
 
