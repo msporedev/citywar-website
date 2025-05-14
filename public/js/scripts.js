@@ -3,17 +3,17 @@ const articles = [
     {  
       title: "چگونه وارد سرور شویم؟",  
       excerpt: "در این مقاله تمام مراحل ورود به سرور را آموزش میدهیم...",  
-      image: "https://vscode.dev/github/msporedev/citywar-website/blob/main/public/images/citywar-icon.jpg",  
-      url: ""  
+      image: "https://uploadkon.ir/uploads/75b920_25citywar-icon.jpg",  
+      url: "#"
     },  
     {  
-      title: "",  
-      excerpt: "شروع کار با React و ایجاد رابط کاربری داینامیک و حرفه‌ای...",  
-      image: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=400&q=80",  
+      title: "آموزش ماینکرافت",  
+      excerpt: "در این بخش، میتوانید درمورد بازی ماینکرافت اطلاعات جمع آوری کنید...",  
+      image: "https://uploadkon.ir/uploads/55ea20_25Default-citywar-minecraft-server-NFT-2.jpg",  
       url: "#"  
     },  
     {  
-      title: "روش‌های مدیریت زمان موثر",  
+      title: "روش‌های پیشنهادی کسب درآمد",  
       excerpt: "در این مقاله با تکنیک‌های مدیریت زمان آشنا می‌شوید تا بهره‌وری‌تان را افزایش دهید.",  
       image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80",  
       url: "#"  
