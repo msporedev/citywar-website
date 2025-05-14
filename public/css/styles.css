@@ -8,8 +8,7 @@ body {
 header {  
     color: white;  
     background: linear-gradient(to right, #1c1c1c, #333);   
-    padding: 20px;
-    text-align: center;  
+    padding: 20px;  
     position: fixed;
     width: 100%;  
 }  
@@ -17,8 +16,26 @@ header {
 header h1 {  
     margin: 0; 
     display: flex;  
-    gap: px; /* فاصله بین لینک‌ها */ 
+    gap: 0px; /* فاصله بین لینک‌ها */ 
 }  
+
+.header_main{
+  text-align: end;
+  /* display: flex; */
+  margin-right: 1em;
+  margin-bottom: 0;
+}
+
+.header a:hover{
+  color: #ffa500;
+}
+
+header a{
+  color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 10px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */
+}
 
 nav{
     margin: 10px 0;  
@@ -29,7 +46,7 @@ nav{
 nav a {  
     color: white;  
     text-decoration: none;  /* حذف زیرخط لینک */
-    margin: 0 15px;  
+    margin: 0 10px;  
     transition: color 0.5s;  /* انیمیشن رنگ */  
 }
 
@@ -39,7 +56,6 @@ nav a:hover {
 
 main{
     padding: 20px;  
-    /* padding-top: 5em; */
     text-align: left;
 }
 
@@ -149,7 +165,7 @@ footer{
 
 
 
-.title_label{
+#title_label{
   display: flex;
   flex-wrap: wrap;
   text-align: center;

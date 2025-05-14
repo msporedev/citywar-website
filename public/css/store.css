@@ -34,7 +34,7 @@ nav {
 nav a {  
     color: white;  
     text-decoration: none;  /* حذف زیرخط لینک */
-    margin: 0 15px;  
+    margin: 0 10px;  
     transition: color 0.5s;  /* انیمیشن رنگ */ 
 }  
 
