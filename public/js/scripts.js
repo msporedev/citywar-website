@@ -1,10 +1,10 @@
 // نمونه داده مقالات  
 const articles = [  
     {  
-      title: "چگونه وارد سرور شویم؟",  
-      excerpt: "در این مقاله تمام مراحل ورود به سرور را آموزش میدهیم...",  
+      title: "چنل یوتیوب ما",  
+      excerpt: "چنل رسمی یوتیوب سرور بزرگ سیتی وار...",  
       image: "https://uploadkon.ir/uploads/75b920_25citywar-icon.jpg",  
-      url: "#"
+      url: "http://www.youtube.com/@citywar_secondlife"
     },  
     {  
       title: "آموزش ماینکرافت",  
@@ -14,7 +14,7 @@ const articles = [
     },  
     {  
       title: "روش‌های پیشنهادی کسب درآمد",  
-      excerpt: "در این مقاله با تکنیک‌های مدیریت زمان آشنا می‌شوید تا بهره‌وری‌تان را افزایش دهید.",  
+      excerpt: "در این مقاله با روش های پیشنهادی کسب درآمد در سرور آشنا میشوید.",  
       image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80",  
       url: "#"  
     },  
@@ -23,12 +23,6 @@ const articles = [
       excerpt: "مهم‌ترین مهارت‌هایی که به شما کمک می‌کند برنامه نویسی را عمیق‌تر یاد بگیرید.",  
       image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&q=80",  
       url: "#"  
-    },
-    {
-        title: "",
-        excerpt: "",
-        image: "",
-        url: "#"
     }
   ];  
   
