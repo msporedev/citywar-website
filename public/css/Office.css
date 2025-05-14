@@ -1,0 +1,99 @@
+body {  
+    font-family: tahoma, sans-serif;
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}  
+
+header {  
+    color: white;  
+    background: linear-gradient(to right, #1c1c1c, #333);   
+    padding: 20px;
+    text-align: center;  
+    position: fixed;
+    width: 100%;  
+}  
+
+header h1 {  
+    margin: 0; 
+    display: flex;  
+    gap: px; /* فاصله بین لینک‌ها */ 
+}  
+
+nav{
+    margin: 10px 0;  
+    display: flex;  
+    gap: 2px; /* فاصله بین لینک‌ها */
+}
+
+nav a {  
+    color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 10px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */  
+}
+
+nav a:hover {  
+    color: #ffa500; /* رنگ پررنگ هنگام هاور */  
+}  
+
+footer{
+    text-align: center;  
+    margin-top: 10em;
+    padding: 10px;  
+    background-color: #404040;  
+    color: white;  
+    top: 90%;
+}
+
+
+
+#title_label{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 8em;
+  margin-top: auto;
+  justify-content: center;
+}
+
+.items{
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 1em;
+  text-decoration: none !important;
+  
+}
+
+.items:hover{
+  transform: translateY(-5px);
+  transition-duration: 0.4s;
+}
+
+figure{
+  padding: 0;
+  margin: 0;
+}
+
+.items_img{
+  min-width: 10em;
+  max-width: 20em;
+  min-height: 10em;
+  max-height: 20em;
+  border-radius: 5px;
+}
+
+.items_title_EN{
+  font-size: x-large;
+  font-family: tahoma, sans-serif;
+  margin: 1em;
+  text-align: center;
+  color: black;
+}
+
+.items_caption_EN{
+  font-size: 17px;
+  margin-bottom: 1em;
+  color: #1c1c1c;
+}
+
