@@ -171,7 +171,9 @@ footer{
   }  
 
 
-
+a{
+  padding: 0;
+}
 
 #title_label{
   display: flex;
@@ -180,14 +182,15 @@ footer{
   margin: 1em;
   margin-top: auto;
   justify-content: center;
+  gap: 1em;
 }
 
 .items{
   background-color: #fff;
   border-radius: 7px;
-  margin: 1em;
+  /* margin: 1em; */
   text-decoration: none !important;
-  
+  max-width: 320px;
 }
 
 .items:hover{
@@ -217,7 +220,7 @@ figure{
 }
 
 .items_caption_EN{
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 1em;
   color: #1c1c1c;
 }

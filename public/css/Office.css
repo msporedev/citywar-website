@@ -97,6 +97,7 @@ a{
   border-radius: 7px;
   text-decoration: none !important;
   padding-bottom: 0.2em;
+  max-width: 320px;
 }
 
 .items:hover{
@@ -127,7 +128,7 @@ figure{
 }
 
 .items_caption_EN{
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 1em;
   color: #1c1c1c;
 }
