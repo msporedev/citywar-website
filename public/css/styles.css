@@ -26,8 +26,16 @@ header h1 {
   margin-bottom: 0;
 }
 
+.header a{
+  background-color: #30d773;
+  padding: 4px;
+  border-radius: 5px;
+}
+
 .header a:hover{
   color: #ffa500;
+  background-color: #26ad5c;
+  transition-duration: 0.5s;
 }
 
 header a{
