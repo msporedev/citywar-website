@@ -21,7 +21,6 @@ header h1 {
 
 .header_main{
   text-align: end;
-  /* display: flex; */
   margin-right: 1em;
   margin-bottom: 0;
 }
@@ -99,6 +98,7 @@ footer{
     gap: 20px;  
     justify-content: center;  
     margin-top: 30px;  
+    text-align: right;
   }  
   
   .article-card {  
@@ -177,7 +177,7 @@ footer{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin: 0;
+  margin: 1em;
   margin-top: auto;
   justify-content: center;
 }
