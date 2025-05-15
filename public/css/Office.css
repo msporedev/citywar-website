@@ -20,6 +20,13 @@ header h1 {
     gap: px; /* فاصله بین لینک‌ها */ 
 }  
 
+.header_main{
+  text-align: end;
+  display: block;
+  margin-right: 1em;
+  margin-bottom: 0;
+}
+
 nav{
     margin: 10px 0;  
     display: flex;  
@@ -47,22 +54,49 @@ footer{
 }
 
 
+.search-box{
+    text-align: center;
+    /* padding-top: 10em; */
+    /* margin-bottom: 3em; */
+}
+
+input#search{
+    font-size: large;
+    border-radius: 5px;
+    width: 30%;
+    background-origin: unset;
+}
+
+.search-box form button{
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #30d773;
+}
+
+
+a{
+  text-decoration: none !important;
+  padding: 0;
+}
 
 #title_label{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-top: 8em;
   margin-top: auto;
   justify-content: center;
+  padding: 0;
+  padding-top: 10em;
+  gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .items{
   background-color: #fff;
   border-radius: 7px;
-  margin: 1em;
   text-decoration: none !important;
-  
+  padding-bottom: 0.2em;
 }
 
 .items:hover{
@@ -87,6 +121,7 @@ figure{
   font-size: x-large;
   font-family: tahoma, sans-serif;
   margin: 1em;
+  margin-top: 0;
   text-align: center;
   color: black;
 }
