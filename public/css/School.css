@@ -1,0 +1,157 @@
+body {  
+    font-family: tahoma, sans-serif;
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}  
+
+header {  
+    color: white;  
+    background: linear-gradient(to right, #1c1c1c, #333);   
+    padding: 20px;
+    text-align: center;  
+    position: fixed;
+    width: 100%;  
+}  
+
+header h1 {  
+    margin: 0; 
+    display: flex;  
+    gap: px; /* فاصله بین لینک‌ها */ 
+}  
+
+.header_main{
+  text-align: end;
+  display: flex;
+  margin-right: 1em;
+  margin-bottom: 0;
+  justify-content: space-between;
+    align-items: center;
+}
+
+.header a{
+  background-color: #30d773;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.header a:hover{
+  color: #ffa500;
+  background-color: #26ad5c;
+  transition-duration: 0.5s;
+}
+
+header a{
+  color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 10px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */
+    font-size: 15px;
+}
+
+nav{
+    margin: 10px 0;  
+    display: flex;  
+    gap: 2px; /* فاصله بین لینک‌ها */
+}
+
+nav a {  
+    color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 10px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */  
+}
+
+nav a:hover {  
+    color: #ffa500; /* رنگ پررنگ هنگام هاور */  
+}  
+
+footer{
+    text-align: center;  
+    margin-top: 10em;
+    padding: 10px;  
+    background-color: #404040;  
+    color: white;  
+    top: 90%;
+}
+
+
+.search-box{
+    text-align: center;
+    /* padding-top: 10em; */
+    /* margin-bottom: 3em; */
+}
+
+input#search{
+    font-size: large;
+    border-radius: 5px;
+    width: 60%;
+    background-origin: unset;
+}
+
+.search-box form button{
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #30d773;
+}
+
+
+a{
+  text-decoration: none !important;
+  padding: 0;
+}
+
+#title_label{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: auto;
+  justify-content: center;
+  padding: 0;
+  padding-top: 10em;
+  gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.items{
+  background-color: #fff;
+  border-radius: 7px;
+  text-decoration: none !important;
+  padding-bottom: 0.2em;
+  max-width: 320px;
+}
+
+.items:hover{
+  transform: translateY(-5px);
+  transition-duration: 0.4s;
+}
+
+figure{
+  padding: 0;
+  margin: 0;
+}
+
+.items_img{
+  min-width: 10em;
+  max-width: 20em;
+  min-height: 10em;
+  max-height: 20em;
+  border-radius: 5px;
+}
+
+.items_title_EN{
+  font-size: x-large;
+  font-family: tahoma, sans-serif;
+  margin: 1em;
+  margin-top: 0;
+  text-align: center;
+  color: black;
+}
+
+.items_caption_EN{
+  font-size: 15px;
+  margin-bottom: 1em;
+  color: #1c1c1c;
+}
+
