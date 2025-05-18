@@ -22,9 +22,31 @@ header h1 {
 
 .header_main{
   text-align: end;
-  display: block;
+  display: flex;
   margin-right: 1em;
   margin-bottom: 0;
+  justify-content: space-between;
+    align-items: center;
+}
+
+.header a{
+  background-color: #30d773;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.header a:hover{
+  color: #ffa500;
+  background-color: #26ad5c;
+  transition-duration: 0.5s;
+}
+
+header a{
+  color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 10px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */
+    font-size: 15px;
 }
 
 nav{
@@ -63,7 +85,7 @@ footer{
 input#search{
     font-size: large;
     border-radius: 5px;
-    width: 30%;
+    width: 60%;
     background-origin: unset;
 }
 
