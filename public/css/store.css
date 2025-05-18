@@ -12,13 +12,13 @@ header {
     text-align: center;  
     position: fixed;
     width: 100%; 
-    font-family:'Arial', sans-serif;
+    font-family: tahoma, sans-serif;
 }  
 
 header h1 {  
     margin: 0; 
     display: flex;  
-    gap: 7px; /* فاصله بین لینک‌ها */ 
+    gap: 0px; /* فاصله بین لینک‌ها */ 
 }  
 
 nav {  
