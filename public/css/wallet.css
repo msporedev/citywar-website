@@ -14,26 +14,22 @@ header {
     width: 100%; 
 }  
 
-header span { 
-    font-size: 2.5em; 
-    color: #ebebeb;
+header h1 {  
     margin: 0; 
-    display: flex; 
-    font-family: 'Arial', sans-serif;
-    gap: 15px; /* فاصله بین لینک‌ها */ 
-}  
+    display: flex;  
+    gap: 0px; /* فاصله بین لینک‌ها */ 
+}   
 
 nav {  
-    font-family: 'Arial', sans-serif;
     margin: 10px 0;  
     display: flex;  
-    gap: 15px; /* فاصله بین لینک‌ها */
+    gap: 2px; /* فاصله بین لینک‌ها */
 }  
 
 nav a {  
     color: white;  
     text-decoration: none;  /* حذف زیرخط لینک */
-    margin: 0 15px;  
+    margin: 0 10px;  
     transition: color 0.5s;  /* انیمیشن رنگ */ 
 }  
 
