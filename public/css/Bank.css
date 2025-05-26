@@ -1,0 +1,334 @@
+/* پایه */  
+body {  
+    font-family: Tahoma, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+    direction: rtl;  
+    color: #333;  
+}  
+
+header {  
+    background: linear-gradient(to right, #1c1c1c, #333);  
+    color: white;  
+    padding: 20px 10px;  
+    position: fixed;  
+    width: 100%;  
+    top: 0;  
+    box-sizing: border-box;  
+    z-index: 1000;  
+}  
+
+.header_main {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    max-width: 1200px;  
+    margin: 0 auto;  
+}  
+
+.logo h1 {  
+    margin: 0;  
+    font-size: 1.8em;  
+}  
+
+.search-box {  
+    flex-grow: 1;  
+    margin: 0 20px;  
+}  
+
+.search-box form {  
+    display: flex;  
+    justify-content: center;  
+}  
+
+.search-box input#search {  
+    width: 60%;  
+    font-size: 1rem;  
+    border-radius: 5px 0 0 5px;  
+    border: none;  
+    padding: 7px 10px;  
+}  
+
+.search-box button {  
+    background-color: #30d773;  
+    border: none;  
+    border-radius: 0 5px 5px 0;  
+    color: white;  
+    font-size: 1rem;  
+    cursor: pointer;  
+    padding: 7px 10px;  
+    transition: background-color 0.3s;  
+}  
+
+.search-box button:hover {  
+    background-color: #26ad5c;  
+}  
+
+.login a {  
+    background-color: #30d773;  
+    padding: 6px 12px;  
+    border-radius: 5px;  
+    color: white;  
+    text-decoration: none;  
+    font-weight: bold;  
+}  
+
+.login a:hover {  
+    background-color: #26ad5c;  
+}  
+
+nav {  
+    margin-top: 10px;  
+    background-color: #222;  
+    padding: 10px 0;  
+    text-align: center;  
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none;  
+    margin: 0 15px;  
+    font-size: 1.1em;  
+    padding: 5px 10px;  
+    transition: color 0.3s;  
+}  
+
+nav a.active,  
+nav a:hover {  
+    color: #ffa500;  
+}  
+
+/* استایل اصلی */  
+main {  
+    max-width: 1200px;  
+    margin: 130px auto 40px; /* زیر header */  
+    display: flex;  
+    gap: 20px;  
+    padding: 0 10px;  
+    box-sizing: border-box;  
+    min-height: 600px;  
+}  
+
+aside {  
+    width: 220px;  
+    background: #222;  
+    border-radius: 8px;  
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.3);  
+}  
+
+.sidebar-nav ul {  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+}  
+
+.sidebar-nav li {  
+    border-bottom: 1px solid #444;  
+}  
+
+.sidebar-nav button {  
+    display: block;  
+    width: 100%;  
+    text-align: right;  
+    padding: 12px 20px;  
+    background: none;  
+    border: none;  
+    color: white;  
+    font-size: 1rem;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+    border-radius: 0;  
+}  
+
+.sidebar-nav button:hover,  
+.sidebar-nav button.active {  
+    background-color: #30d773;  
+    color: #000;  
+}  
+
+/* بخش محتوا */  
+section.content {  
+    background: white;  
+    flex-grow: 1;  
+    border-radius: 8px;  
+    padding: 20px;  
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);  
+}  
+
+section.content h2 {  
+    margin-top: 0;  
+    margin-bottom: 15px;  
+    color: #1c1c1c;  
+}  
+
+.section {  
+    display: none;  
+}  
+
+.section.active {  
+    display: block;  
+}  
+
+/* فرم انتقال */  
+#transferForm {  
+    display: flex;  
+    flex-direction: column;  
+    max-width: 400px;  
+}  
+
+#transferForm label {  
+    margin: 10px 0 5px;  
+}  
+
+#transferForm input {  
+    padding: 8px;  
+    font-size: 1rem;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+}  
+
+#transferForm button {  
+    margin-top: 15px;  
+    background-color: #30d773;  
+    border: none;  
+    color: white;  
+    padding: 10px;  
+    font-size: 1.1rem;  
+    cursor: pointer;  
+    border-radius: 5px;  
+    transition: background-color 0.3s;  
+}  
+
+#transferForm button:hover {  
+    background-color: #26ad5c;  
+}  
+
+#transferMessage {  
+    margin-top: 10px;  
+    font-weight: bold;  
+    color: green;  
+}  
+
+/* جدول سوابق تراکنش */  
+table {  
+    width: 100%;  
+    border-collapse: collapse;  
+}  
+
+table th,  
+table td {  
+    border: 1px solid #ddd;  
+    padding: 10px;  
+    text-align: center;  
+}  
+
+table th {  
+    background-color: #30d773;  
+    color: #fff;  
+}  
+
+/* لیست ساده */  
+ul {  
+    padding-right: 15px;  
+}  
+
+ul li {  
+    margin-bottom: 8px;  
+}  
+
+
+.wallet-card {  
+    background: linear-gradient(135deg, #30d773, #26ad5c);  
+    color: white;  
+    border-radius: 12px;  
+    padding: 20px;  
+    max-width: 400px;  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  
+    margin-bottom: 20px;  
+}  
+
+.wallet-card p {  
+    font-size: 1.15rem;  
+    margin: 8px 0;  
+}  
+
+#walletBalance {  
+    font-weight: bold;  
+    font-size: 1.4rem;  
+}  
+
+#walletMessage {  
+    margin-top: 10px;  
+    font-weight: bold;  
+    color: green;  
+}  
+
+.add-money {  
+    max-width: 400px;  
+    display: flex;  
+    gap: 10px;  
+    align-items: center;  
+    margin-top: 10px;  
+}  
+
+.add-money label {  
+    flex-shrink: 0;  
+    font-weight: 600;  
+}  
+
+.add-money input {  
+    flex-grow: 1;  
+    padding: 8px;  
+    font-size: 1rem;  
+    border-radius: 5px;  
+    border: 1px solid #ccc;  
+}  
+
+.add-money button {  
+    background-color: #30d773;  
+    border: none;  
+    color: white;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 1rem;  
+    transition: background-color 0.3s;  
+}  
+
+.add-money button:hover {  
+    background-color: #26ad5c;  
+}  
+
+#walletMessage.error {  
+    color: #e63946;  
+}  
+
+
+.installments-table {  
+    width: 100%;  
+    border-collapse: collapse;  
+    margin-top: 15px;  
+}  
+
+.installments-table th,  
+.installments-table td {  
+    border: 1px solid #ddd;  
+    padding: 10px;  
+    text-align: center;  
+    font-size: 1rem;  
+}  
+
+.installments-table th {  
+    background-color: #30d773;  
+    color: #fff;  
+    font-weight: 600;  
+}  
+
+.installments-table tr:nth-child(even) {  
+    background-color: #f9f9f9;  
+}  
+
+.installments-table tr:hover {  
+    background-color: #e4f9e3;  
+}  
