@@ -43,17 +43,17 @@ function loadTransactionHistory() {
 
 // تابع افزایش موجودی کیف پول (نمونه)  
 function addMoney(amount) {  
-    alert(`موجودی شما به مقدار ${amount.toLocaleString('fa-IR')} تومان افزایش یافت.`);  
+    alert(`موجودی شما به مقدار ${amount.toLocaleString('IR')} تومان افزایش یافت.`);  
     // اینجا می‌توان کدهای سرور را فراخوانی کرد تا موجودی واقعی بروزرسانی شود  
 }  
 
 // موجودی کیف پول به تومان (متغیر داخلی برای شبیه‌سازی)  
-let walletBalance = 5000000;  
+let walletBalance = 0;  
 
 // متد بروز رسانی نمایش موجودی داخل کارت  
 function updateWalletDisplay() {  
     const walletBalanceElem = document.getElementById("walletBalance");  
-    walletBalanceElem.textContent = walletBalance.toLocaleString('fa-IR');  
+    walletBalanceElem.textContent = walletBalance.toLocaleString('IR');  
 }  
 
 // تابع برای رفرش (شبیه سازی گرفتن موجودی جدید)  
@@ -77,10 +77,12 @@ document.getElementById("addBalanceBtn").addEventListener("click", () => {
 
     walletBalance += amount;  
     updateWalletDisplay();  
-    walletMessage.textContent = `موجودی کیف پول به مقدار ${amount.toLocaleString('fa-IR')} بالانس افزایش یافت.`;  
+    walletMessage.textContent = `موجودی کیف پول به مقدار ${amount.toLocaleString('IR')} بالانس افزایش یافت.`;  
     walletMessage.classList.remove("error");  
     amountInput.value = "";  
 });  
+
+
 
 // فرم انتقال پول  
 function handleTransfer(event) {  

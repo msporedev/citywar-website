@@ -58,17 +58,22 @@
 
     <div class="wallet-card">  
         <p><strong>آیدی بانک:</strong> 1234-5678-9012-3456</p>  
-        <p><strong>موجودی کیف پول:</strong> <span id="walletBalance">۵,۰۰۰,۰۰۰</span>$ Balance</p>  
+        <p><strong>موجودی کیف پول:</strong> <span id="walletBalance">0</span>$ Balance</p>  
+        <p><strong>عنوان حساب:</strong> <span id="wallet-type">normal</span> سطح: 0</p>
         <button id="refreshWalletBtn">🔄 رفرش موجودی</button>  
     </div>  
 
     <div class="add-money">  
         <label for="addAmount">مبلغ افزایش موجودی (Balance):</label>  
-        <input type="number" id="addAmount" min="1000" placeholder="مثلا ۵۰۰۰۰۰" />  
+        <input type="number" id="addAmount" min="1000" placeholder="مثلا 5000" title="min: 1000" />  
         <button id="addBalanceBtn">افزایش موجودی</button>  
     </div>  
 
     <p id="walletMessage"></p>  
+
+    <h3>توجه:</h3>
+    <p>قیمت هر Balance معادل 0.001 دلار است. یعنی هر 100$ Balance معادل 1 دلار است.</p>
+    <p>قیمت دلار در حال حاضر 84,000 تومان حساب میشود.</p>
 </div>    
 
             <!-- انتقال و واریز -->  
