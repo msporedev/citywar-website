@@ -1,9 +1,9 @@
 // داده نمونه سوابق تراکنش برای نمایش  
-const transactions = [  
-    { date: "۱۴۰۴/۰۲/۱۰", type: "واریز", amount: 2000000, description: "افزایش موجودی کیف پول" },  
-    { date: "۱۴۰۴/۰۲/۱۲", type: "انتقال", amount: 500000, description: "انتقال به حساب شماره 1234567890" },  
-    { date: "۱۴۰۴/۰۲/۱۵", type: "پرداخت قسط", amount: 2000000, description: "پرداخت قسط وام خودرو" },  
-];  
+const transactions = [
+    { date: "۱۴۰۴/۰۲/۱۰", time: "۱۰:۳۰", type: "واریز", amount: 2000000, description: "افزایش موجودی کیف پول" },
+    { date: "۱۴۰۴/۰۲/۱۲", time: "۱۵:۲۰", type: "انتقال", amount: 500000, description: "انتقال به حساب شماره 1234567890" },
+    { date: "۱۴۰۴/۰۲/۱۵", time: "۰۹:۰۰", type: "پرداخت قسط", amount: 2000000, description: "پرداخت قسط وام خودرو" },
+];
 
 // مدیریت وضعیت نمایش بخش‌ها و تغییر کلاس فعال در منو  
 function showSection(sectionId) {  
@@ -25,20 +25,21 @@ function showSection(sectionId) {
 }  
 
 // نمایش سوابق تراکنش به صورت دینامیک  
-function loadTransactionHistory() {  
-    const tbody = document.getElementById("historyBody");  
-    tbody.innerHTML = "";  
-    transactions.forEach(t => {  
-        const tr = document.createElement("tr");  
-        tr.innerHTML = `  
-            <td>${t.date}</td>  
-            <td>${t.type}</td>  
-            <td>${t.amount.toLocaleString('fa-IR')}</td>  
-            <td>${t.description}</td>  
-        `;  
-        tbody.appendChild(tr);  
-    });  
-}  
+function loadTransactionHistory() {
+    const tbody = document.getElementById("historyBody");
+    tbody.innerHTML = "";
+    transactions.forEach(t => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${t.date}</td>
+            <td>${t.time}</td> <!-- اضافه شد -->
+            <td>${t.type}</td>
+            <td>${t.amount.toLocaleString('fa-IR')}</td>
+            <td>${t.description}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
 
 // تابع افزایش موجودی کیف پول (نمونه)  
 function addMoney(amount) {  
