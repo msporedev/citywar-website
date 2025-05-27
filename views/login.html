@@ -1,77 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CityWar | ورود</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CityWar | ورود</title>
+<link rel="shortcut icon" href="/public/images/citywar-icon.jpg" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="shortcut icon" href="/public/images/citywar-icon.jpg" type="image/x-icon">
-
-    <link rel="stylesheet" href="/public/css/signup.css">
 </head>
 <body>
 
-    <article>
+<article>
 
-        <head>
-            <p><strong><h1>CityWar Login</h1></strong></p>
-        </head>
+    <header>
+        <h1 style="text-align: center;">CityWar Login</h1>
+    </header>
 
-            <form action="profile.html" method="post">
-    
-                <figcaption>
-                    <label for="Email"> Email:
-                    <input type="email" name="Email" id="Email" placeholder="ایمیل">
-                    </label>
-                </figcaption>
-    
-                <figcaption>
-                    <label for="PhoneNumber"> Phone Number:
-                    <select name="Country" id="">
-                        <ul>
-                            <option value="select" selected disabled>Country</option>
-                            <option value="Iran">Iran</option>
-                            <option value="Belgium">Belgium</option>
-                            <option value="Germany">Germany</option>
-                            <option value="Irland">Irland</option>
-                            <option value="France">France</option>
-                            <option value="American">American</option>
-                            <option value="Russia">Russia</option>
-                            <option value="India">India</option>
-                        </ul>
-                    </select>
-                    <input type="tel" name="Phone number" id="PhoneNumber" placeholder="شماره همراه">
-                    </label>
-                </figcaption>
-    
-                <figcaption>
-                    <label for="Username"> Username:
-                    <input type="text" name="Username" id="Username" placeholder="In Server">
-                    </label>
-                </figcaption>
-                
-                <figcaption>
-                    <label for="Password"> Password:
-                    <input type="password" name="Password" id="Password" placeholder="پسورد">
-                    </label>
-                </figcaption>
+    <form action="profile.html" method="post" style="max-width: 500px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
 
-                    <figcaption class="law-accept">
-                        <label for="laws-accepting">
-                            <p class="laws">تمام <a href="./laws.html" target="_blank" class="link" style="font-size: x-large;">قوانین</a> را خوانده و تایید میکنم<input type="checkbox"
-                                name="laws-accepting" id="laws-accepting"></p>
-                        </label>
-                    </figcaption>
-    
-                    <button type="submit" formaction="profile.html" formenctype="multipart/form-data"> Login </button>
-    
-            </figure>
-    
-            <p><a href="signup.html" class="link">Create account</a></p><p><a href="" class="link">Forget Password Or Account?</a></p><p><a href="index.html" class="link">Back To Home</a></p><p><a href="Connection.html" class="link">Connection With Site</a></p><p><a href="" class="link">Report Problems</a></p>
-    
-        </form>
+        <div style="margin-bottom: 15px;">
+            <label for="Email"><strong>ایمیل:</strong></label>
+            <input type="email" name="Email" id="Email" placeholder="ایمیل" required style="width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;">
+        </div>
 
-    </article>
-    
+        <div style="margin-bottom: 15px;">
+            <label for="PhoneNumber"><strong>شماره تلفن:</strong></label>
+            <select name="Country" id="Country" style="width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;">
+                <option value="select" disabled selected>انتخاب کشور</option>
+                <option value="Iran">ایران</option>
+                <option value="Belgium">بلژیک</option>
+                <option value="Germany">آلمان</option>
+                <option value="Irland">ایرلند</option>
+                <option value="France">فرانسه</option>
+                <option value="American">آمریکا</option>
+                <option value="Russia">روسیه</option>
+                <option value="India">هند</option>
+            </select>
+            <input type="tel" name="Phone" id="PhoneNumber" placeholder="شماره همراه" required style="width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label for="Username"><strong>نام کاربری:</strong></label>
+            <input type="text" name="Username" id="Username" placeholder="نام کاربری" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label for="Password"><strong>پسورد:</strong></label>
+            <input type="password" name="Password" id="Password" placeholder="پسورد" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+        </div>
+
+        <!-- بخش کپچا -->
+        <div style="margin-bottom: 15px;">
+        <label for="captcha_input"><strong>کپچا (کد 1234 را وارد کنید):</strong></label>
+        <input type="text" id="captcha_input" placeholder="کد کپچا را وارد کنید" required style="width:100%; padding:8px; margin-top:5px; border-radius:4px; border:1px solid #ccc;" />
+    </div>
+
+        <!-- تایید قوانین -->
+        <div class="law-accept" style="margin-bottom: 15px;">
+            <label for="laws-accepting" style="font-size: 14px;">
+                <input type="checkbox" id="laws-accepting" name="laws-accepting" required>
+                تمام <a href="./laws.html" target="_blank" class="link" style="font-size: x-large;">قوانین</a> را خوانده و تایید میکنم.
+            </label>
+        </div>
+
+        <button type="submit" style="width: 100%; padding: 10px; background:#30d773; color:#fff; border:none; border-radius:4px; font-size:16px; cursor:pointer;">ورود</button>
+
+        <!-- لینک‌ها -->
+        <div style="margin-top:20px; text-align:center;">
+            <a href="signup.html" class="link" onclick="return checkCaptcha('create');" style="margin-right: 10px; background-color:#30d773; padding:6px 12px; border-radius:5px; color:white; text-decoration:none; font-weight:bold;">ایجاد حساب</a>
+            <a href="" class="link" onclick="return checkCaptcha('forgot');" style="margin-left: 10px; background-color:#30d773; padding:6px 12px; border-radius:5px; color:white; text-decoration:none; font-weight:bold;">فراموشی پسورد یا حساب؟</a>
+        </div>
+
+        <!-- پیام خطا -->
+        <div id="captcha-error" style="color:red; text-align:center; margin-top:10px; display:none;">لطفاً کپچا را تایید کنید و کد درست را وارد کنید.</div>
+
+    </form>
+</article>
+
+<script src="/public/js/login.js"></script>
+
+<script>
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+    const captchaInput = document.getElementById('captcha_input');
+    const captchaValue = captchaInput.value.trim();
+
+    if (captchaValue !== '1234') {
+        e.preventDefault();
+        alert('لطفا کد کپچا را صحیح وارد کنید. کد صحیح "1234" است.');
+        captchaInput.focus();
+        return false;
+    }
+    const lawsAccepted = document.getElementById('laws-accepting').checked;
+    if (!lawsAccepted) {
+        e.preventDefault();
+        alert('لطفا قوانین را تایید کنید.');
+        return false;
+    }
+    return true;
+});
+</script>
+
 </body>
 </html>

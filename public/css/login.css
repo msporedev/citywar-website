@@ -1,0 +1,23 @@
+/* استایل پایه- عمومی */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    direction: rtl;
+    color: #333;
+}
+
+/* لینک‌ها */
+.link {
+    background-color: #30d773;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    background-color: #26ad5c;
+}
