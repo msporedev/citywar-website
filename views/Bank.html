@@ -26,7 +26,7 @@
                 </form>  
             </div>  
             <div class="login">  
-                <a href="./login.html">ورود / ثبت‌نام</a>  
+                <a href="./login.html">Login/Signup</a>  
             </div>  
         </div>  
         <nav>  
@@ -45,6 +45,7 @@
                     <li><button onclick="showSection('history')">سوابق تراکنش</button></li>  
                     <li><button onclick="showSection('installments')">مدیریت اقساط و بدهکاری</button></li>  
                     <li><button onclick="showSection('contracts')">قراردادهای بانکی</button></li>  
+                    <li><button onclick="showSection('taxManagement')">مدیریت مالیات</button></li>
                     <li><button onclick="showSection('other')">سایر خدمات</button></li>  
                 </ul>  
             </nav>  
@@ -58,8 +59,9 @@
 
     <div class="wallet-card">  
         <p><strong>آیدی بانک:</strong> 1234-5678-9012-3456</p>  
+        <p><strong>سطح حساب:</strong> <span id="accountLevel">سطح 0</span></p> <!-- اضافه شد -->
         <p><strong>موجودی کیف پول:</strong> <span id="walletBalance">0</span>$ Balance</p>  
-        <p><strong>عنوان حساب:</strong> <span id="wallet-type">normal</span> سطح: 0</p>
+        <!-- <p><strong>عنوان حساب:</strong> <span id="wallet-type">normal</span> سطح: 0</p> -->
         <button id="refreshWalletBtn">🔄 رفرش موجودی</button>  
     </div>  
 
@@ -234,6 +236,27 @@
                     <li>قرارداد حساب پس‌انداز ویژه - تاریخ شروع: ۰۵/۰۹/۱۴۰۲</li>  
                 </ul>  
             </div>  
+
+
+            <!-- مدیریت مالیات -->
+<div id="taxManagement" class="section">
+    <h2>مدیریت مالیات</h2>
+    <p>در این بخش می‌توانید وضعیت مالیاتی خود را مشاهده و مدیریت کنید.</p>
+    <form id="taxForm" onsubmit="return false;">
+        <label for="taxStatus">وضعیت مالیاتی:</label>
+        <select id="taxStatus" required>
+            <option value="معاف">معاف</option>
+            <option value="عادی">عادی</option>
+        </select>
+        <br><br>
+        <label>درصد مالیات:</label>
+        <input type="number" id="taxPercent" min="0" max="100" value="10" /> %
+        <br><br>
+        <button onclick="saveTaxInfo()">ذخیره</button>
+    </form>
+    <p id="taxMessage"></p>
+</div>
+
 
             <!-- سایر خدمات -->  
             <div id="other" class="section">  

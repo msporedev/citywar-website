@@ -41,6 +41,30 @@ function loadTransactionHistory() {
     });
 }
 
+
+// سطح حساب فعلی نمونه (می‌توانید مقدار اولیه را تغییر دهید)
+let accountLevelValue = 0; // 0 = سطح معمولی، 1 = حساب تجاری سطح 1، 2 = سطح 2
+
+// برای بروزرسانی سطح حساب داخل صفحه
+function updateAccountLevelDisplay() {
+    const levelSpan = document.getElementById("accountLevel");
+    let levelText = "";
+    switch (accountLevelValue) {
+        case 0:
+            levelText = "سطح 0 - حساب معمولی";
+            break;
+        case 1:
+            levelText = "سطح 1 - حساب تجاری سطح 1";
+            break;
+        case 2:
+            levelText = "سطح 2 - حساب تجاری سطح 2";
+            break;
+        default:
+            levelText = "سطح نامشخص";
+    }
+    levelSpan.textContent = levelText;
+}
+
 // تابع افزایش موجودی کیف پول (نمونه)  
 function addMoney(amount) {  
     alert(`موجودی شما به مقدار ${amount.toLocaleString('IR')} تومان افزایش یافت.`);  
@@ -132,10 +156,6 @@ function searchServices(input) {
 
 
 
-// بارگذاری اولیه داده‌ها  
-window.onload = function() {  
-    loadTransactionHistory();  
-};  
 
 
 
@@ -194,8 +214,22 @@ function loadInstallments() {
     });  
 }  
 
+
+// تابع ذخیره وضعیت مالیاتی
+function saveTaxInfo() {
+    const status = document.getElementById("taxStatus").value;
+    const percent = document.getElementById("taxPercent").value;
+    const message = document.getElementById("taxMessage");
+    message.textContent = `وضعیت مالیاتی شما ذخیره شد: ${status}, درصد: ${percent}%`;
+    message.style.color = "green";
+}
+
+
+
 window.onload = function() {  
     loadTransactionHistory();  
     updateWalletDisplay();  
     loadInstallments();  // اضافه شد برای بارگذاری جدول اقساط  
+    updateAccountLevelDisplay(); // این خط رو اضافه کنید
+    updateAccountLevelDisplay();
 };  

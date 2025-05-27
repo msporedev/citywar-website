@@ -332,3 +332,29 @@ ul li {
 .installments-table tr:hover {  
     background-color: #e4f9e3;  
 }  
+
+
+/* استایل بخش مالیات */
+#taxManagement {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+}
+
+#taxManagement h2 {
+    margin-top: 0;
+    color: #00796b;
+}
+
+#taxForm label {
+    font-weight: 600;
+}
+
+#taxForm input,
+#taxForm select {
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
