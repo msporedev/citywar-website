@@ -8,6 +8,22 @@ body {
     color: #333;
 }
 
+button {
+    transition: background-color 0.3s;
+    width: 100%;
+     padding: 12px;
+      background: #30d773;
+       color: white;
+        border: none;
+         border-radius: 5px;
+          font-size: 16px;
+           cursor: pointer;
+}
+
+button:hover {
+    background-color: #26ad5c;
+}
+
 /* لینک‌ها */
 .link {
     background-color: #30d773;
@@ -16,6 +32,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .link:hover {
