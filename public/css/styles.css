@@ -9,8 +9,11 @@ header {
     color: white;  
     background: linear-gradient(to right, #1c1c1c, #333);   
     padding: 20px;  
-    position: fixed;
+    position: sticky;
     width: 100%;  
+    z-index: 2;
+    top: 0;
+    box-sizing: border-box;
 }  
 
 header h1 {  
@@ -72,19 +75,13 @@ main{
 
 footer{
     text-align: center;  
-    margin-top: 10em;
     padding: 10px;  
     background-color: #404040;  
     color: white;  
-    top: 90%;
 }
 
 
 /* مقالات */
-
-#containers1{
-    padding-top: 8em;
-}
 
 .container {  
     max-width: 1200px;  
