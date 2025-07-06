@@ -1,0 +1,237 @@
+body {  
+    font-family: tahoma, sans-serif;
+    margin: 0;  
+    padding: 0;  
+    background-color: #f4f4f4;  
+}  
+
+
+.fab-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10000;
+  display: flex;
+  align-items: flex-end;
+    flex-direction: column-reverse;
+}
+
+/* دکمه اصلی */
+.fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #30d773; /* رنگ سبز Materialize */
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.2s ease, transform 0.3s ease;
+  user-select: none;
+}
+
+.fab:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.fab:active {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.22);
+  transform: scale(0.95);
+}
+
+.fab:focus-visible {
+  box-shadow: 0 0 0 3px rgba(38, 166, 154, 0.5);
+}
+
+/* چرخش علامت + در هنگام باز بودن منو */
+.fab.open .fab-icon {
+  transform: rotate(45deg);
+  transition: transform 0.5s ease;
+}
+
+/* منوی آیتم‌ها - ابتدا مخفی و هم‌محور با دکمه اصلی */
+.fab-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  
+}
+
+/* نمایش منو */
+.fab-menu.show {
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* آیتم‌ها */
+.fab-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #30d773;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.fab-item:hover {
+  background-color: #30d773;
+}
+
+.fab-item:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(38, 166, 154, 0.5);
+}
+
+
+
+header {  
+    color: white;  
+    background: linear-gradient(to right, #1c1c1c, #333);   
+    padding: 20px;  
+    position: sticky;
+    width: 100%;  
+    z-index: 2;
+    top: 0;
+    box-sizing: border-box;
+}  
+
+header h1 {  
+    margin: 0; 
+    display: flex;  
+    gap: 0px; /* فاصله بین لینک‌ها */ 
+}  
+
+.header_main{
+  text-align: end;
+  margin-right: 1em;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a{
+  background-color: #30d773;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.header a:hover{
+  color: #ffa500;
+  background-color: #26ad5c;
+  transition-duration: 0.5s;
+}
+
+header a{
+  color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 10px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */
+    font-size: 15px;
+}
+
+nav{
+    margin: 10px 0;  
+    display: flex;  
+    gap: 2px; /* فاصله بین لینک‌ها */
+}
+
+nav a {  
+    color: white;  
+    text-decoration: none;  /* حذف زیرخط لینک */
+    margin: 0 10px;  
+    transition: color 0.5s;  /* انیمیشن رنگ */  
+}
+
+nav a:hover {  
+    color: #ffa500; /* رنگ پررنگ هنگام هاور */  
+}
+
+
+.search-box{
+    text-align: center;
+    /* padding-top: 10em; */
+    /* margin-bottom: 3em; */
+}
+
+input#search{
+    font-size: large;
+    border-radius: 5px;
+    width: 60%;
+    background-origin: unset;
+}
+
+.search-box form button{
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #30d773;
+}
+
+
+
+section.content {  
+    background: white;  
+    flex-grow: 1;  
+    border-radius: 8px;  
+    padding: 20px;  
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+}  
+
+section.content h2 {  
+    margin-top: 0;  
+    margin-bottom: 15px;  
+    color: #1c1c1c;  
+}
+
+.section {  
+    display: none;  
+    text-align: center;
+    margin-top: 1em;
+}  
+
+.section.active {  
+    display: block;  
+}  
+
+
+div.product-items{
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+
+
+
+footer{
+    text-align: center;  
+    padding: 10px;  
+    background-color: #404040;  
+    color: white;  
+}

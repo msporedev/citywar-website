@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citywar | Real Estate</title>
+
+    <link rel="shortcut icon" href="/public/images/citywar-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/Real-Estate.css">
+
+</head>
+<body>
+
+
+    <!-- Floating Action Button -->
+<!-- Floating Action Button (اصلی) و آیتم‌های پیش‌نمایش -->
+    <div class="fab-container">
+        <button class="fab main-fab" aria-label="عملیات سریع" aria-expanded="false" aria-controls="fab-menu">
+            <span class="fab-icon">+</span>
+        </button>
+
+        <div class=".sidebar-nav">
+            <ul class="fab-menu" aria-hidden="true" id="fab-menu">
+                <li>
+                    <button onclick="showsection('Main-Page')" class="fab-item active" aria-label="Main Page" title="Main Page">🏠</button>
+                </li>
+                <li>
+                    <button onclick="showsection('Upload-Property')" class="fab-item" aria-label="Upload The Property" title="Upload The Property"> 📤 </button>
+                </li>
+                <li>
+                    <button onclick="showsection('Reservation-List')" class="fab-item" aria-label="Reservation List" title="Reservation List">🧾</button>
+                </li>
+                <li>
+                    <button onclick="showsection('Favorite-List')" class="fab-item" aria-label="Favorite List" title="Favorite List">❤️</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <header>  
+        <div class="header_main">
+        
+            <div class="header">
+                <h1>CityWar</h1>
+            </div>
+        
+            <div class="header">
+                <div class="search-box">
+        
+                    <form role="searchbox" method="get">
+                        <search>
+                            <label for="search">
+                                <input type="search" name="Search" id="search" placeholder="Search" onkeyup="searchProducts(this)">
+                                <button type="submit" role="search">🔄</button>
+                            </label>
+                        </search>
+                    </form>
+                </div>
+            </div>
+
+            <div class="header">
+            <a href="./login.html">Login/Signup</a>
+        </div>
+        </div>
+
+        <nav>  
+            <a href="./index.html">Main Menu</a>
+            <!-- <a href=""></a> -->
+
+            
+        </nav>  
+    </header>
+
+    
+    
+    
+    
+    <section class="container">
+        <div id="Upload-Property" class=" section">
+
+            <form action="">
+
+                <label for="">
+                    <input type="text">
+                </label>
+
+
+            </form>
+
+        </div>
+
+
+
+        <div id="Reservation-List" class="section"> 
+
+        
+
+        </div>
+
+
+        <div id="Favorite-List" class="section">
+            <h2> Real Estate </h2>
+
+
+
+        </div>
+
+
+
+        <div id="Main-Page" class="section active">
+            
+
+            <div class="product-items">
+            <a href="">
+            <figure>
+                <img src="" alt="">
+
+                <p><strong>  </strong></p>
+                <figcaption>  </figcaption>                
+                
+            </figure>
+            </a>
+            </div>
+
+
+            <div class="product-items">
+                <a href="">
+                    <figure>
+                        <img src="" alt="">
+
+                        <p><strong>  </strong></p>
+                        <figcaption>  </figcaption>
+
+                    </figure>
+                </a>
+            </div>
+
+        </div>
+    
+    
+    </section>
+
+    
+    
+    <footer>
+        <p>&copy;2025 CityWar. All rights reserved.</p>
+    </footer>
+    
+
+
+    <script src="/public/js/Real-Estate.js"></script>
+
+</body>
+</html>
