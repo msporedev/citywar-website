@@ -22,7 +22,7 @@ const articles = [
       title: "اخبار سرور",  
       excerpt: "اطلاع از آخرین اخبار درمورد سازه ها، کسب و کار ها، سهام و دیگر اخبار...",  
       image: "https://uploadkon.ir/uploads/18c915_25Leonardo-Phoenix-10-A-futuristic-cityscape-with-sleek-skyscrap-3.jpg",  
-      url: "#"  
+      url: "https://t.me/citywar_server"  
     }
   ];  
   

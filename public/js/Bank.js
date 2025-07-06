@@ -231,5 +231,4 @@ window.onload = function() {
     updateWalletDisplay();  
     loadInstallments();  // اضافه شد برای بارگذاری جدول اقساط  
     updateAccountLevelDisplay(); // این خط رو اضافه کنید
-    updateAccountLevelDisplay();
 };  

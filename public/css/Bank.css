@@ -358,3 +358,12 @@ ul li {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+#refreshWalletBtn{
+    border-radius: 5px;
+    border: none;
+    padding: 4px 4px;
+    color: #ddd;
+    font-size: 1em;
+    background-color: #00796b;
+}
