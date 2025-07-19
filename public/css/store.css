@@ -144,7 +144,7 @@ main {
 }
 
 .buy-button {  
-    background-color: #4CAF50; /* سبز */  
+    background-color: #28da6f; /* سبز */  
     color: white;  
     border: none;  
     border-radius: 5px;  
@@ -247,4 +247,42 @@ input[type="number"] {
     margin-top: 10px;  
     padding: 5px;  
     width: 100px;  
+}
+
+
+p.mark{
+    color: #f4f4f4;
+    background-color: #30d773fc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+}
+
+span.symbols{
+    margin-top: 5em;
+}
+
+article.guarantees_items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+    box-sizing: border-box;
+    margin-top: 1.5em;
+}
+
+div.guarantees img{
+    min-height: 50px;
+    min-width: 50px;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+div.guarantees p {
+    color: #30d773;
 }
