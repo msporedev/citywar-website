@@ -95,8 +95,8 @@ function chargeWallet() {
     const amountInput = document.getElementById("amount");  
     const amount = parseInt(amountInput.value);  
 
-    if (isNaN(amount) || amount <= 0) {  
-        document.getElementById("message").innerText = "لطفاً مقدار معتبری وارد کنید";  
+    if (isNaN(amount) || amount <= 99) {  
+        document.getElementById("message").innerText = "Please enter a Valid value.";  
         return;  
     }  
 

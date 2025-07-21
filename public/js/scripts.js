@@ -16,14 +16,14 @@ const articles = [
       title: "روش‌های پیشنهادی کسب درآمد",  
       excerpt: "در این مقاله با روش های پیشنهادی کسب درآمد در سرور آشنا میشوید",  
       image: "https://uploadkon.ir/uploads/c2e715_25photo-2025-03-16-04-45-31.jpg",  
-      url: "#"  
+      url: "\Bank.html"  
     },  
     {  
       title: "اخبار سرور",  
       excerpt: "اطلاع از آخرین اخبار درمورد سازه ها، کسب و کار ها، سهام و دیگر اخبار...",  
       image: "https://uploadkon.ir/uploads/18c915_25Leonardo-Phoenix-10-A-futuristic-cityscape-with-sleek-skyscrap-3.jpg",  
       url: "https://t.me/citywar_server"  
-    }
+  }
   ];  
   
   const container = document.getElementById('articlesRow');  

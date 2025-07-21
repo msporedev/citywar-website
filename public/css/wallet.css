@@ -6,7 +6,7 @@ body {
 }  
 
 header {  
-    background: linear-gradient(to right, #1c1c1c, #333);  
+    background: linear-gradient(to right, #1c1c1c, #444); 
     color: white;  
     padding: 20px;  
     text-align: center;  
@@ -164,6 +164,8 @@ input[type="number"] {
     font-size: large;
     border-radius: 6px;
     color: #1c1c1c;
+    background: rgba(40, 50, 80, .8);
+    color: #31e531;
 }
 
 button{
@@ -195,20 +197,20 @@ main #wallet-info{
 
 #wallet-balance{
     font-size: x-large;
-    color: #45a049;
+    color: rgb(90, 1000, 1000);
 }
 
 #wallet-dollar{
     font-size: x-large;
-    color: #45a049;
+    color: rgb(90, 1000, 1000);
 }
 
 main #wallet-info article{
     margin-bottom: 0.5em;
-    background-color: #393939;
+    background: linear-gradient(to right, #4CAF50 60%, #52be52);
     padding: 20px;
     border-radius: 7px;
-    color: #4CAF50;
+    color: rgb(120, 1450, 185);
     display: inline-block;
     margin-right: 1em;
 }
