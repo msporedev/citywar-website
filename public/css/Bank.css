@@ -1,4 +1,8 @@
 /* پایه */  
+html{
+    font-size: 100%;
+}
+
 body {  
     font-family: Tahoma, sans-serif;  
     margin: 0;  
@@ -11,54 +15,63 @@ body {
 header {  
     background: linear-gradient(to right, #1c1c1c, #444); 
     color: white;  
-    padding: 20px 10px;  
-    position: fixed;  
+    padding: 2rem .5rem 3.5rem 0.5rem;  
+    position: sticky;  
+    margin: 0;
     width: 100%;  
     top: 0;  
     box-sizing: border-box;  
     z-index: 1000;  
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
 }  
 
 .header_main {  
     display: flex;  
     justify-content: space-between;  
     align-items: center;  
-    max-width: 1200px;  
-    margin: 0 auto;  
+    max-width: 96%;  
+    margin: 0;  
+
 }  
 
 .logo h1 {  
     margin: 0;  
-    font-size: 1.8em;  
+    font-size: 1.5rem;  
 }  
 
 .search-box {  
     flex-grow: 1;  
-    margin: 0 20px;  
+    margin: .5rem 1.2em; 
+    /* transform: translateY(-2.2rem);  */
 }  
 
 .search-box form {  
     display: flex;  
     justify-content: center;  
+    flex-wrap: nowrap;
 }  
 
 .search-box input#search {  
     width: 60%;  
     font-size: 1rem;  
-    border-radius: 5px 0 0 5px;  
+    border-radius: 0 5px 5px 0;  
     border: none;  
-    padding: 7px 10px;  
+    padding: .5em .7em;  
 }  
 
 .search-box button {  
     background-color: #30d773;  
     border: none;  
-    border-radius: 0 5px 5px 0;  
+    border-radius: 5px 0 0 5px;  
     color: white;  
     font-size: 1rem;  
     cursor: pointer;  
-    padding: 7px 10px;  
-    transition: background-color 0.3s;  
+    padding: .5rem .7rem;  
+    transition: background-color 0.5s;  
 }  
 
 .search-box button:hover {  
@@ -67,7 +80,7 @@ header {
 
 .login a {  
     background-color: #30d773;  
-    padding: 6px 12px;  
+    padding: .5rem .8rem;  
     border-radius: 5px;  
     color: white;  
     text-decoration: none;  
@@ -78,11 +91,22 @@ header {
     background-color: #26ad5c;  
 }  
 
+header nav{
+    width: 100%;
+    box-sizing: border-box; 
+    position: absolute;
+    display: block;
+    /* width: 100%; */
+    bottom: 0;
+    right: 0;
+}
+
 nav {  
-    margin-top: 10px;  
+    /* margin-top: 10px;   */
     background-color: #222;  
     padding: 10px 0;  
     text-align: center;  
+    
 }  
 
 nav a {  
@@ -104,10 +128,11 @@ main {
     max-width: 1200px;  
     margin: 130px auto 40px; /* زیر header */  
     display: flex;  
-    gap: 20px;  
+    gap: 10px;  
     padding: 0 10px;  
     box-sizing: border-box;  
-    min-height: 600px;  
+    min-height: 37.5rem;  
+    margin-top: .5rem;
 }  
 
 aside {  
@@ -267,20 +292,22 @@ ul li {
 .add-money {  
     max-width: 400px;  
     display: flex;  
+    flex-wrap: wrap;
     gap: 10px;  
     align-items: center;  
     margin-top: 10px;  
+    font-size: .8rem;
 }  
 
 .add-money label {  
     flex-shrink: 0;  
-    font-weight: 600;  
+    font-weight: bold;
 }  
 
 .add-money input {  
     flex-grow: 1;  
-    padding: 8px;  
-    font-size: 1rem;  
+    padding: .5rem;  
+    font-size: .5rem;  
     border-radius: 5px;  
     border: 1px solid #ccc;  
 }  
@@ -289,11 +316,11 @@ ul li {
     background-color: #30d773;  
     border: none;  
     color: white;  
-    padding: 10px 15px;  
+    padding: .5rem .8rem;  
     border-radius: 5px;  
     cursor: pointer;  
     font-size: 1rem;  
-    transition: background-color 0.3s;  
+    transition: background-color 0.5s;  
 }  
 
 .add-money button:hover {  
@@ -366,4 +393,79 @@ ul li {
     color: #ddd;
     font-size: 1em;
     background-color: #00796b;
+}
+
+@media (max-width: 376px){
+    .header{
+        width: 100%;
+        justify-content: space-between;
+        /* margin: .5rem; */
+        /* padding: 2rem .2rem; */
+        font-size: .5rem;
+        gap: 1rem;
+    }
+
+    .login{
+        font-size: .7rem;
+    }
+
+    .header_main{
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+
+    .search-box{
+        font-size: .5rem;
+        justify-self: center;
+    }
+
+    .search-box input#search{
+        font-size: .5rem;
+        padding: .4em .6em;
+    }
+
+    .search-box button{
+        font-size: .5rem;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    aside{
+        /* display: flex; */
+        
+        margin: 0 ;
+    }
+
+    .content{
+        font-size: .5rem;
+    }
+
+    /* .section{
+        font-size: .7rem;
+    } */
+     
+    .wallet-card{
+        font-size: .5rem;
+    }
+    
+    .add-money{
+        font-size: .8rem;
+    }
+
+    .add-money label{
+        /* font-size: .2rem; */
+    }
+
+    .add-money button{
+        font-size: .5rem;
+       
+    }
+
+    #addAmount{
+
+    }
 }
