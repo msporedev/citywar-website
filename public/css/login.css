@@ -1,3 +1,7 @@
+html{
+    font-size: 100%;
+}
+
 /* استایل پایه- عمومی */
 body {
     font-family: Tahoma, sans-serif;
@@ -9,15 +13,17 @@ body {
 }
 
 button {
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
     width: 100%;
      padding: 12px;
       background: #30d773;
        color: white;
         border: none;
          border-radius: 5px;
-          font-size: 16px;
+          font-size: 1rem;
+          font-weight: bold;
            cursor: pointer;
+           margin-top: 1rem;
 }
 
 button:hover {
@@ -27,14 +33,61 @@ button:hover {
 /* لینک‌ها */
 .link {
     background-color: #30d773;
-    padding: 6px 12px;
+    padding: .4rem .7rem;
     border-radius: 5px;
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    /* font-weight: bold; */
+    font-size: 1rem;
+    transition: background-color 0.5s;
 }
 
 .link:hover {
     background-color: #26ad5c;
+}
+
+.law-accepting{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+.check{
+    height: 25px;
+    width: 25px;
+    background-color: aliceblue;
+    display: inline-block;
+    position: absolute;
+    border-radius: 6px;
+    right: 0;
+    align-items: center;
+    transition-duration: .7s;
+}
+
+.check:hover{
+    background-color: #d3faff;
+}
+
+label span {
+    margin-right: 2.5rem;
+}
+
+/*input.check {
+    height: 10px;
+    width: 5px;
+    border: #30d773 solid 3px;
+    border-right: 0;
+    border-top: 0;
+} */
+
+input[type="checkbox"]::after {
+    content: "";
+    /* background-color: initial; */
+    /* cursor: default; */
+    /* appearance: auto; */
+    /* box-sizing: border-box; */
+    /* margin: 3px 3px 3px 4px; */
+    /* border-radius: 5px; */
+    /* padding: initial; */
+    border: red 6px;
 }
