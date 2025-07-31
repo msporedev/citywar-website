@@ -1,3 +1,7 @@
+html{
+    font-size: 100%;
+}
+
 body {  
     font-family: tahoma, sans-serif;
     margin: 0;  
@@ -55,7 +59,7 @@ main {
     margin: 5px;  
     border-radius: 5px;  
     cursor: pointer;  
-    transition: background-color 0.3s;  
+    transition: 0.7s;  
 }  
 
 .buy-button {  
@@ -160,7 +164,7 @@ label {
 
 input[type="number"] {  
     margin-top: 10px;  
-    padding: 7px 15px;
+    padding: 0.5em 1em;
     font-size: large;
     border-radius: 6px;
     color: #1c1c1c;
