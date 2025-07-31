@@ -1,3 +1,7 @@
+html{
+    font-size: 100%;
+}
+
 body {  
     font-family: tahoma, sans-serif;
     margin: 0;  
@@ -8,11 +12,11 @@ body {
 header {  
     color: white; 
     background: linear-gradient(to right, #1c1c1c, #444);  
-    padding: 20px;  
+    padding: 1.5rem;  
     position: sticky;
     width: 100%; 
     top: 0;
-    z-index: 2;
+    z-index: 1000;
     font-family: tahoma, sans-serif;
     box-sizing: border-box;
 }  
@@ -102,11 +106,12 @@ main {
 .product {  
     background-color: white;  
     border-radius: 10px;  
-    width: 200px;  
-    padding: 15px;  
-    margin: 10px;  
+    width: 12.5rem;  
+    padding: .9rem;  
+    margin: .65rem;  
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
-    transition: transform 0.2s;  
+    transition: transform 0.5s;  
+    position: relative;
 }  
 
 .product:hover {
@@ -161,7 +166,7 @@ main {
 
 footer {  
     text-align: center;  
-    padding: 10px;  
+    padding: .6rem;  
     background-color: #333;  
     color: white;  
 }
@@ -181,7 +186,7 @@ footer {
 .modal {  
     display: none; /* پنجره به طور پیش‌فرض پنهان است */  
     position: fixed; /* برای قرارگیری در وسط صفحه */  
-    z-index: 1; /* در بالای دیگر عناصر */  
+    z-index: 2000; /* در بالای دیگر عناصر */  
     left: 0;  
     top: 0;  
     width: 100%; /* عرض کامل صفحه */  
@@ -258,6 +263,9 @@ p.mark{
     z-index: 2;
     padding: 0;
     margin: 0;
+    position: absolute;
+    min-width: 12.5rem;
+    box-sizing: border-box;
 }
 
 span.symbols{
@@ -267,22 +275,32 @@ span.symbols{
 article.guarantees_items{
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
     flex-direction: row;
     justify-content: center;
     gap: 1.5em;
     box-sizing: border-box;
     margin-top: 1.5em;
+    font-size: .7em;
 }
 
 div.guarantees img{
-    min-height: 50px;
-    min-width: 50px;
-    max-height: 150px;
-    max-width: 150px;
+    min-height: 1rem;
+    min-width: 1rem;
+    max-height: 9rem;
+    max-width: 9rem;
     border-radius: 50%;
 }
 
 div.guarantees p {
     color: #30d773;
+}
+
+
+
+
+
+/* risponsive */
+
+@media (min-width: 1441px) {
+    
 }
